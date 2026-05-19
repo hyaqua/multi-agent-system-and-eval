@@ -1,0 +1,2 @@
+# Test seed URLs for web crawler
+http://httpbin.org/

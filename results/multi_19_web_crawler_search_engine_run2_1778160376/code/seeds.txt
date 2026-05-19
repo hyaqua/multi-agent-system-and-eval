@@ -1,0 +1,5 @@
+# Sample seed URLs for testing the web crawler
+# These are small, safe pages to crawl
+
+https://example.com
+https://httpbin.org

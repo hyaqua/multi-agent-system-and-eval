@@ -1,0 +1,9 @@
+{
+  "rooms": {
+    "lobby": {"password": ""},
+    "python_dev": {"password": "py123"},
+    "writers_room": {"password": "write"},
+    "test.py": {"password": ""},
+    "main.py": {"password": ""}
+  }
+}

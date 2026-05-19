@@ -1,0 +1,19 @@
+{
+    "rooms": {
+        "general": {
+            "password": "letmein",
+            "document_file": "/tmp/collab_editor/documents/general.txt"
+        },
+        "dev": {
+            "password": "dev123",
+            "document_file": "/tmp/collab_editor/documents/dev.py"
+        },
+        "notes": {
+            "password": "notes",
+            "document_file": "/tmp/collab_editor/documents/notes.txt"
+        }
+    },
+    "persistence_dir": "/tmp/collab_editor/documents",
+    "logs_dir": "/tmp/collab_editor/logs",
+    "max_users_per_room": 20
+}

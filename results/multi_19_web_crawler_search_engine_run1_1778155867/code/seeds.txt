@@ -1,0 +1,5 @@
+# Sample seed URLs for testing the web crawler
+# One URL per line. Lines starting with # are ignored.
+
+https://example.com
+https://httpbin.org/html
