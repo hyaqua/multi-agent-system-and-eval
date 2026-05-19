@@ -1,0 +1,21 @@
+{
+    "name": "static_site_generator",
+    "difficulty": "hard",
+    "spec": "Create a static site generator in Python using only the standard library (no Jinja2, no Markdown libraries). The tool reads content files written in a simple Markdown-like format with YAML-style front matter (parsed manually, no PyYAML), applies them to HTML templates, and outputs a complete static website. It supports blog posts, pages, and generates an index with navigation.",
+    "features": [
+        "Reads content files from a content/ directory in Markdown format",
+        "Parses YAML-style front matter delimited by --- lines to extract title, date, tags, and template name",
+        "Converts basic Markdown (headings, bold, italic, links, lists, code blocks, paragraphs) to HTML",
+        "Reads HTML template files from a templates/ directory",
+        "Templates support placeholder variables using {{variable}} syntax that get replaced with content",
+        "Templates support a {{content}} placeholder where the converted Markdown body is inserted",
+        "Generates a blog index page listing all posts sorted by date with titles and dates",
+        "Generates a navigation menu from all pages (non-blog content) automatically",
+        "Outputs the complete generated site into an output/ directory with proper file structure",
+        "Copies static assets (CSS, images) from a static/ directory to the output",
+        "Generates clean URLs by creating directory/index.html for each page",
+        "Supports a --serve flag that starts a local HTTP server to preview the generated site",
+        "Supports a --clean flag that removes the output directory before building",
+        "Includes a sample site with at least 2 templates, 3 blog posts, and 2 pages to demonstrate functionality"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "text_statistics",
+    "difficulty": "simple",
+    "spec": "Create a command-line text statistics analyzer in Python using only the standard library. The tool reads a text file and produces a detailed statistical report about its contents. It should analyze characters, words, sentences, and provide frequency distributions. Output should be well-formatted and readable.",
+    "features": [
+        "Accepts a text file path as a command-line argument",
+        "Displays total character count including and excluding whitespace",
+        "Displays total word count",
+        "Displays total line count",
+        "Displays total sentence count (detecting sentence boundaries by punctuation)",
+        "Calculates and displays average word length",
+        "Calculates and displays average words per sentence",
+        "Shows the top 10 most frequent words with their counts",
+        "Shows character frequency distribution for alphabetic characters",
+        "Identifies the longest and shortest words in the text",
+        "Calculates a readability score (e.g. Flesch-Kincaid or similar formula)",
+        "Displays an error message if the file does not exist or is empty",
+        "Output is formatted in clear sections with headers"
+    ]
+}

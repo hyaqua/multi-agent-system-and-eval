@@ -1,0 +1,23 @@
+{
+    "name": "sql_engine",
+    "difficulty": "ultra_hard",
+    "spec": "Create a SQL query engine in Python using only the standard library. The engine reads data from CSV files as tables and supports a subset of SQL for querying them. It includes a lexer, parser, and query executor. The engine runs as a REPL where users type SQL queries and see formatted results. No external SQL libraries are allowed.",
+    "features": [
+        "Runs in a REPL loop where users type SQL queries",
+        "Loads CSV files as named tables with a LOAD command (e.g. LOAD users FROM 'users.csv')",
+        "Supports SELECT with specific column names (e.g. SELECT name, age FROM users)",
+        "Supports SELECT * to retrieve all columns",
+        "Supports WHERE clause with comparison operators (=, !=, <, >, <=, >=)",
+        "Supports WHERE clause with AND and OR logical operators",
+        "Supports ORDER BY one or more columns with ASC/DESC",
+        "Supports LIMIT to restrict the number of returned rows",
+        "Supports COUNT, SUM, AVG, MIN, MAX aggregate functions",
+        "Supports GROUP BY with aggregate functions",
+        "Supports INNER JOIN between two tables on a specified column",
+        "Supports INSERT INTO to add a new row to a table",
+        "Results are displayed in a formatted ASCII table with column headers and alignment",
+        "Produces clear syntax error messages indicating what went wrong and where",
+        "Supports saving a table back to a CSV file with a SAVE command",
+        "Includes sample CSV files and example queries that demonstrate all features"
+    ]
+}

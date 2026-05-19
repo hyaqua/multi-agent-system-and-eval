@@ -1,0 +1,19 @@
+{
+    "name": "markdown_converter",
+    "difficulty": "medium",
+    "spec": "Create a command-line tool that converts Markdown files to HTML using only the standard library. The tool takes a .md file as input and produces a .html file as output. It should handle common Markdown syntax elements and produce valid, well-structured HTML with a basic stylesheet for readability.",
+    "features": [
+        "Accepts a markdown file path as a command-line argument",
+        "Outputs an HTML file with the same name but .html extension",
+        "Converts headings (h1 through h6 using # syntax) to HTML heading tags",
+        "Converts bold text (**text** or __text__) to <strong> tags",
+        "Converts italic text (*text* or _text_) to <em> tags",
+        "Converts inline links [text](url) to <a> tags",
+        "Converts unordered lists (lines starting with - or *) to <ul><li> tags",
+        "Converts ordered lists (lines starting with numbers) to <ol><li> tags",
+        "Converts fenced code blocks (```) to <pre><code> tags",
+        "Wraps plain paragraphs in <p> tags with blank line separation",
+        "Includes a basic inline CSS stylesheet in the HTML head for readable formatting",
+        "Displays an error message if the input file does not exist"
+    ]
+}

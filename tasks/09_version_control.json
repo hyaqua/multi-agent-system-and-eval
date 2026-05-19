@@ -1,0 +1,21 @@
+{
+    "name": "version_control",
+    "difficulty": "hard",
+    "spec": "Create a simplified Git-like version control system in Python using only the standard library. The tool tracks changes to files in a directory, supports commits with messages, branching, and can show diffs between versions. All version data is stored in a hidden .vcs directory within the project. The tool is invoked via CLI subcommands similar to git.",
+    "features": [
+        "An 'init' command initializes a new repository by creating a .vcs directory structure",
+        "A 'status' command shows which files are new, modified, or deleted compared to the last commit",
+        "An 'add' command stages specific files for the next commit",
+        "A 'commit' command creates a snapshot of all staged files with a required commit message",
+        "Each commit stores the file contents, a timestamp, the message, and a unique hash ID",
+        "A 'log' command displays the commit history with hash, message, timestamp, and author",
+        "A 'diff' command shows line-by-line differences between the working directory and the last commit",
+        "A 'checkout' command restores all files to the state of a specific commit by its hash",
+        "A 'branch' command creates a new named branch from the current commit",
+        "A 'switch' command switches between branches",
+        "Commits on different branches are tracked independently",
+        "File contents are stored efficiently using content-addressable hashing (files with identical content share storage)",
+        "Handles binary files by detecting and skipping diff display for them",
+        "Shows a helpful error message when commands are run outside an initialized repository"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "name": "system_monitor_tui",
+    "difficulty": "ultra_hard",
+    "spec": "Create a terminal-based system monitor in Python using only the standard library and curses. The application emulates htop-style monitoring with real-time updates, vim-inspired keybindings, and multiple views. All system data must be read directly from /proc and /sys filesystems without any external libraries like psutil.",
+    "features": [
+        "Launches a full-screen curses TUI that updates every second by default",
+        "Displays CPU usage per core as individual progress bars with percentage",
+        "Displays a historical CPU usage graph using braille unicode characters showing the last 60 seconds",
+        "Displays total RAM usage, used, free, available, and cached memory in human-readable units",
+        "Displays swap usage with total, used, and free values",
+        "Displays system uptime in days, hours, minutes, and seconds format",
+        "Displays system load averages for 1, 5, and 15 minute intervals",
+        "Displays a process table with PID, user, CPU%, MEM%, state, and command name",
+        "Process table is scrollable with j/k vim keys and arrow keys",
+        "Process table can be sorted by CPU, memory, or PID by pressing c, m, or p respectively",
+        "Pressing / enters search mode filtering the process list by name in real time",
+        "Pressing Escape clears the current search filter",
+        "Pressing K on a selected process sends SIGKILL after a confirmation prompt",
+        "Pressing r on a selected process allows entering a new nice value to renice it",
+        "Displays a process tree view toggled with t showing parent-child relationships with ASCII tree lines",
+        "Displays network I/O per interface showing bytes sent and received per second",
+        "Displays disk usage for all mounted filesystems showing total, used, free, and percentage",
+        "Displays disk I/O read and write speeds in human-readable units updated per second",
+        "Displays battery status including percentage, charging state, and estimated time remaining if available",
+        "Displays active network connection counts by state parsed from /proc/net/tcp",
+        "Tab key cycles between views: Overview, Processes, Network, Disk",
+        "Color coding uses green for low usage, yellow for medium, and red for high across all meters",
+        "Pressing F5 forces an immediate refresh",
+        "Pressing q or F10 exits the application cleanly restoring the terminal state",
+        "Update interval is configurable via --interval flag defaulting to 1 second",
+        "All system data is read directly from /proc/stat, /proc/meminfo, /proc/net/dev, /proc/diskstats, /proc/uptime, /proc/loadavg, /sys/class/power_supply and related proc files without external libraries"
+    ]
+}

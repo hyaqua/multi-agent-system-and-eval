@@ -1,0 +1,20 @@
+{
+    "name": "file_organizer",
+    "difficulty": "medium",
+    "spec": "Create a command-line file system organizer in Python using only the standard library. The tool scans a target directory and organizes files into subdirectories based on configurable rules (by file type, date, size, or name pattern). It supports a dry-run mode to preview changes before applying them and keeps a log of all operations for undo support.",
+    "features": [
+        "Accepts a target directory path as a command-line argument",
+        "Scans the directory and lists all files with their type, size, and modification date",
+        "Organizes files into subdirectories by file extension category (e.g. Images, Documents, Audio, Video, Code, Other)",
+        "Supports organizing by modification date into year/month subdirectories with a --by-date flag",
+        "Supports organizing by file size into Small/Medium/Large subdirectories with a --by-size flag",
+        "Supports a dry-run mode with --dry-run flag that shows what would happen without moving files",
+        "Displays a summary showing how many files would be moved to each subdirectory",
+        "Handles filename conflicts by appending a number suffix (e.g. file_1.txt, file_2.txt)",
+        "Logs all file operations to a JSON log file with source and destination paths",
+        "Supports an undo command that reads the log and reverses the last organization operation",
+        "Skips hidden files and directories by default",
+        "Handles permission errors gracefully with a warning message per file",
+        "Shows a progress indicator when processing large directories"
+    ]
+}

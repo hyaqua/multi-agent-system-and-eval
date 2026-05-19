@@ -1,0 +1,22 @@
+{
+    "name": "kv_store",
+    "difficulty": "ultra_hard",
+    "spec": "Create a distributed key-value store running on a single machine using multiple processes in Python with only the standard library. The system consists of a router process that distributes keys across multiple storage node processes using consistent hashing. Clients connect to the router via TCP sockets. The store supports basic CRUD operations, TTL-based expiration, and node failure detection.",
+    "features": [
+        "A router process starts and listens for client connections on a configurable TCP port",
+        "Multiple storage node processes start and register themselves with the router",
+        "Keys are distributed across nodes using consistent hashing so each node owns a range of keys",
+        "A client can SET a key-value pair which gets routed to the correct node",
+        "A client can GET a value by key which gets routed to the correct node and returns the value",
+        "A client can DELETE a key which removes it from the correct node",
+        "SET supports an optional TTL in seconds after which the key automatically expires",
+        "A client can LIST all keys optionally filtered by a prefix pattern",
+        "The router detects when a storage node becomes unresponsive via periodic health checks",
+        "When a node fails, the router redistributes its key range to remaining nodes",
+        "A simple CLI client is included for interacting with the store",
+        "All communication uses a simple text-based protocol over TCP sockets",
+        "The router logs all operations and node status changes",
+        "Multiple clients can connect and operate concurrently without data corruption",
+        "A startup script launches the router and a configurable number of nodes"
+    ]
+}

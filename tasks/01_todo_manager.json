@@ -1,0 +1,20 @@
+{
+    "name": "todo_manager",
+    "difficulty": "simple",
+    "spec": "Create a command-line todo manager in Python using only the standard library. Users manage tasks through text commands in a REPL. Each task has a title, priority level, completion status, and creation timestamp. Tasks persist between sessions via a JSON file. Support filtering, sorting, and basic search.",
+    "features": [
+        "Runs in a REPL loop accepting text commands",
+        "User can add a task with a title and optional priority (low, medium, high) via an 'add' command",
+        "User can list all tasks showing ID, title, priority, status, and creation date",
+        "User can mark a task as complete by its ID with a 'done' command",
+        "User can delete a task by its ID with a 'delete' command",
+        "User can filter tasks by status with 'list active' and 'list done'",
+        "User can sort tasks by priority or date with 'list --sort priority' or 'list --sort date'",
+        "User can search tasks by keyword with a 'search' command",
+        "Tasks are saved to a JSON file automatically after every change",
+        "Tasks are loaded from the JSON file on startup if it exists",
+        "Handles invalid commands and task IDs gracefully with helpful error messages",
+        "User can type 'help' to see available commands",
+        "User can type 'quit' or 'exit' to stop the program"
+    ]
+}

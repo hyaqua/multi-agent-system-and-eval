@@ -1,0 +1,20 @@
+{
+    "name": "tetris_game",
+    "difficulty": "hard",
+    "spec": "Create a Tetris game using Python and Pygame. Implement the classic Tetris gameplay where tetromino pieces fall from the top of the playing field and the player must rotate and position them to complete rows. Completed rows should be cleared and the game speeds up over time. The game should feel responsive and polished.",
+    "features": [
+        "A pygame window opens with a bordered playing field grid",
+        "All 7 standard tetromino pieces (I, O, T, S, Z, L, J) appear with distinct colors",
+        "Pieces fall automatically from the top at a steady rate",
+        "Pieces can be moved left and right with arrow keys",
+        "Pieces can be rotated clockwise with the up arrow key",
+        "Pieces can be soft-dropped faster with the down arrow key",
+        "Pieces lock in place when they land on the bottom or on other pieces",
+        "Completed horizontal rows are detected and cleared with remaining rows shifting down",
+        "A score is displayed and increases when rows are cleared",
+        "The falling speed increases as the score or level gets higher",
+        "A next piece preview panel shows the upcoming piece",
+        "Game ends when a new piece cannot be placed at the top of the field",
+        "Game over screen shows the final score and level reached"
+    ]
+}

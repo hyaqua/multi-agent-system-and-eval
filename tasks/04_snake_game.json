@@ -1,0 +1,17 @@
+{
+    "name": "snake_game",
+    "difficulty": "medium",
+    "spec": "Create a classic Snake game using Python and Pygame. The game should have a grid-based playing field where a snake moves around eating food to grow longer. The game should be visually clean with a clear grid, colored snake, and distinct food items. Include a scoring system and game over detection.",
+    "features": [
+        "A pygame window opens and displays a grid-based playing field",
+        "A snake appears on the grid and can be controlled with arrow keys",
+        "The snake moves continuously in the current direction at a steady pace",
+        "Food spawns at a random unoccupied position on the grid",
+        "The snake grows longer by one segment when it eats food",
+        "A score counter is displayed on screen and increments when food is eaten",
+        "Game ends when the snake collides with the wall boundaries",
+        "Game ends when the snake collides with its own body",
+        "A game over screen is displayed with the final score",
+        "The game can be restarted by pressing a key after game over"
+    ]
+}

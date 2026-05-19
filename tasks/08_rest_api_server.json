@@ -1,0 +1,21 @@
+{
+    "name": "rest_api_server",
+    "difficulty": "hard",
+    "spec": "Create an HTTP REST API server in Python using only the standard library (http.server, json, etc. — no Flask, Django, or FastAPI). The server exposes a CRUD API for managing a collection of items. It should handle routing, request parsing, JSON serialization, basic authentication, and proper HTTP status codes. Data persists in a JSON file.",
+    "features": [
+        "Server starts on a configurable port and logs incoming requests",
+        "GET /items returns a JSON array of all items",
+        "GET /items/{id} returns a single item by its ID or 404 if not found",
+        "POST /items creates a new item from a JSON request body and returns 201 with the created item",
+        "PUT /items/{id} updates an existing item and returns the updated item or 404",
+        "DELETE /items/{id} deletes an item and returns 204 or 404 if not found",
+        "All responses include correct Content-Type: application/json headers",
+        "Invalid JSON in request bodies returns 400 Bad Request with an error message",
+        "Unsupported routes return 404 Not Found",
+        "Unsupported methods on valid routes return 405 Method Not Allowed",
+        "Basic token authentication via Authorization header — requests without a valid token get 401",
+        "Items are stored in a JSON file and loaded on startup",
+        "GET /items supports query parameter filtering by any field (e.g. /items?category=books)",
+        "Server handles concurrent requests without crashing using threading"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "platformer_game",
+    "difficulty": "ultra_hard",
+    "spec": "Create a 2D platformer game using Python and Pygame. The player controls a character that can run and jump across platforms, collect coins, and avoid enemies. The game should have gravity physics, multiple levels, and a health system. Levels are defined in a simple data format so multiple levels can be loaded.",
+    "features": [
+        "A pygame window opens displaying a side-view platformer level",
+        "A player character is rendered and can move left and right with arrow keys",
+        "The player can jump with the spacebar and is affected by gravity",
+        "The player lands on and stands on solid platforms at various heights",
+        "Platforms are rendered as solid colored rectangles at defined positions",
+        "Collectible coins are placed on platforms and the player picks them up on contact",
+        "A coin counter is displayed on screen and updates when coins are collected",
+        "Enemy characters patrol back and forth on platforms",
+        "The player takes damage and loses health when touching an enemy",
+        "A health bar or health display is shown on screen",
+        "The game ends when health reaches zero with a game over screen",
+        "At least 3 distinct levels are included with different platform layouts",
+        "The player advances to the next level by reaching a goal point at the end",
+        "A camera or viewport scrolls horizontally to follow the player"
+    ]
+}

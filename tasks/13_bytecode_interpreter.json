@@ -1,0 +1,23 @@
+{
+    "name": "bytecode_interpreter",
+    "difficulty": "ultra_hard",
+    "spec": "Create a bytecode interpreter for a simple programming language in Python using only the standard library. The system has three stages: a lexer that tokenizes source code, a compiler that produces bytecode instructions, and a virtual machine that executes the bytecode. The language should support variables, arithmetic, conditionals, loops, functions, and print output.",
+    "features": [
+        "A lexer tokenizes source code into tokens (numbers, identifiers, operators, keywords, delimiters)",
+        "The lexer handles integer and float literals, string literals, and single-line comments",
+        "A compiler parses tokens and emits a sequence of bytecode instructions",
+        "The language supports variable assignment and retrieval (e.g. x = 10)",
+        "The language supports arithmetic expressions with correct operator precedence (+, -, *, /, parentheses)",
+        "The language supports comparison operators (==, !=, <, >, <=, >=) producing boolean results",
+        "The language supports if/else conditional blocks",
+        "The language supports while loops",
+        "The language supports function definitions with parameters and return values",
+        "The language supports function calls with arguments",
+        "A built-in print statement outputs values to stdout",
+        "The virtual machine executes bytecode using a stack-based architecture",
+        "Meaningful error messages are produced for syntax errors with line numbers",
+        "Meaningful error messages are produced for runtime errors (division by zero, undefined variables)",
+        "The interpreter accepts a source file path as a command-line argument and executes it",
+        "At least 3 example programs are included that demonstrate all language features"
+    ]
+}
