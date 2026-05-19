@@ -1,0 +1,5 @@
+name,age,salary
+Alpha,25,50000
+Beta,30,60000,extra_field
+Gamma,35
+Delta,40,80000

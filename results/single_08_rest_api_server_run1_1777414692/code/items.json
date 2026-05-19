@@ -1,0 +1,8 @@
+{
+  "items": [
+    {"id": "1", "name": "Widget", "category": "tools", "price": 9.99},
+    {"id": "2", "name": "Gadget", "category": "electronics", "price": 24.99},
+    {"id": "3", "name": "Thingamajig", "category": "tools", "price": 14.50}
+  ],
+  "next_id": 4
+}

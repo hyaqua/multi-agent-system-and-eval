@@ -1,0 +1,5 @@
+department,dept_code,budget,manager
+Engineering,ENG,5000000,"Smith, John"
+Marketing,MKT,2000000,"Doe, Jane"
+Finance,FIN,3000000,"Garcia, Maria"
+Sales,SALES,1500000,"Not in people"

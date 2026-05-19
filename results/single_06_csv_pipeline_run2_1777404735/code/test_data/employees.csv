@@ -1,0 +1,11 @@
+id,name,age,salary,hire_date,department
+1,Alice Smith,32,75000,2020-03-15,Engineering
+2,Bob Johnson,45,85000,2018-07-22,Engineering
+3,Charlie Brown,28,62000,2022-01-10,Marketing
+4,"Diana, Ross",38,92000,2019-11-05,Management
+5,Eve Wilson,52,105000,2015-06-30,Management
+6,Frank Miller,41,78000,2017-09-12,Engineering
+7,Grace Lee,29,65000,2021-04-18,Marketing
+8,"Henry ""Hank"" Jones",35,80000,2020-12-01,Engineering
+9,Iris Chen,31,71000,2021-08-25,Marketing
+10,Jack Brown,44,88000,2016-02-14,Management

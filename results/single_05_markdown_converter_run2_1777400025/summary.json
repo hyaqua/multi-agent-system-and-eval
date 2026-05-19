@@ -1,0 +1,26 @@
+{
+  "task_name": "markdown_converter",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 2,
+  "total_tokens_used": 856313,
+  "duration_seconds": 1117.29,
+  "num_files": 3,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 715102,
+      "num_files": 2,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 2,
+      "tokens_so_far": 856313,
+      "num_files": 3,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

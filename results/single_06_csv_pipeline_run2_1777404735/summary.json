@@ -1,0 +1,26 @@
+{
+  "task_name": "csv_pipeline",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 2,
+  "total_tokens_used": 536529,
+  "duration_seconds": 435.94,
+  "num_files": 8,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 447768,
+      "num_files": 7,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 3,
+      "tokens_so_far": 536529,
+      "num_files": 8,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

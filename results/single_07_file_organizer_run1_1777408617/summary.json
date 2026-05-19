@@ -1,0 +1,19 @@
+{
+  "task_name": "file_organizer",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 1,
+  "total_tokens_used": 519010,
+  "duration_seconds": 645.8,
+  "num_files": 9,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 25,
+      "tokens_so_far": 519010,
+      "num_files": 9,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

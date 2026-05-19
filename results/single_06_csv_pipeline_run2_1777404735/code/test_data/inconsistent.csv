@@ -1,0 +1,5 @@
+name,age,city
+Alice,30,NYC
+Bob,25,LA,extra_field
+Charlie,35,CHI
+David,28,BOS,extra1,extra2

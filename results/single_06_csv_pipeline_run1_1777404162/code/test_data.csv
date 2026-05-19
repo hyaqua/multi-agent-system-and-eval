@@ -1,0 +1,11 @@
+name,age,salary,hire_date,department
+Alice,30,75000,2020-03-15,Engineering
+Bob,45,85000,2015-01-20,Marketing
+Charlie,28,65000,2021-07-01,Engineering
+Diana,35,95000,2018-11-10,Finance
+Eve,50,120000,2012-06-01,Finance
+Frank,22,45000,2023-01-15,Marketing
+Grace,38,88000,2019-04-22,Engineering
+Henry,41,,2016-09-30,Finance
+Iris,29,72000,,Engineering
+Jack,33,79000,2020-12-01,

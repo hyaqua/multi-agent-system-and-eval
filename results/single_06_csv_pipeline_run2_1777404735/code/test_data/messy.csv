@@ -1,0 +1,8 @@
+id,name,age,salary,hire_date,department
+11,Karen Stone,,,2023-01-01,
+12,,37,55000,,Sales
+13,Liam O'Neil,29,,2022-06-15,Sales
+14,Maria Garcia,,71000,2019-03-20,
+15,,,,
+,NoName,42,50000,2021-01-01,Operations
+17,Pat Quinn,55,95000,,Operations

@@ -1,0 +1,26 @@
+{
+  "task_name": "rest_api_server",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 2,
+  "total_tokens_used": 590563,
+  "duration_seconds": 424.35,
+  "num_files": 8,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 323510,
+      "num_files": 7,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 12,
+      "tokens_so_far": 590563,
+      "num_files": 8,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+id,name,age,salary,hire_date,department,city
+1,"Smith, John",32,75000.50,2020-03-15,Engineering,"New York"
+2,"Doe, Jane",28,82000.00,2021-07-01,Marketing,"San Francisco"
+3,"Wilson, Bob",45,95000.75,2015-01-10,Engineering,Chicago
+4,"Lee, Sarah",36,67000.00,2019-11-20,Marketing,"New York"
+5,"Garcia, Maria",29,72000.25,2022-02-28,Finance,"San Francisco"
+6,"Brown, James",52,105000.00,2012-06-15,Engineering,Chicago
+7,"Davis, Emma",31,78000.50,2020-09-01,Finance,"New York"
+8,"Miller, David",41,,2018-04-12,Marketing,Chicago
+9,"Taylor, Olivia",27,69000.00,2023-01-05,Engineering,"San Francisco"
+10,"Anderson, Tom",38,88000.00,2017-08-23,Finance,"New York"
+11,"Thomas, Lisa",33,,2021-12-10,Marketing,
+12,"Jackson, Mark",44,102000.00,,Engineering,Chicago
