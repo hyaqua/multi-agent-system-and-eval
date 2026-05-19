@@ -1,0 +1,39 @@
+{
+  "task_name": "system_monitor_tui",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 4,
+  "total_tokens_used": 5037507,
+  "duration_seconds": 1816.1,
+  "num_files": 19,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 517893,
+      "num_files": 17,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 30,
+      "tokens_so_far": 1804859,
+      "num_files": 18,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 2,
+      "tool_rounds": 21,
+      "tokens_so_far": 3149102,
+      "num_files": 19,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 3,
+      "tool_rounds": 22,
+      "tokens_so_far": 5037507,
+      "num_files": 19,
+      "has_progress_report": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "task_name": "system_monitor_tui",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 1,
+  "total_tokens_used": 856781,
+  "duration_seconds": 1177.5,
+  "num_files": 2,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 26,
+      "tokens_so_far": 856781,
+      "num_files": 2,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

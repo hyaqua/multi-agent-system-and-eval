@@ -1,0 +1,25 @@
+{
+  "task_name": "sql_engine",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 2,
+  "total_tokens_used": 1026918,
+  "duration_seconds": 836.23,
+  "num_files": 10,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 547391,
+      "num_files": 10,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 13,
+      "tokens_so_far": 1026918,
+      "num_files": 10,
+      "has_progress_report": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+id,name,age,email,city,salary
+1,Alice,30,alice@example.com,New York,75000
+2,Bob,25,bob@example.com,Los Angeles,65000
+3,Charlie,35,charlie@example.com,Chicago,85000
+4,Diana,28,diana@example.com,New York,72000
+5,Eve,22,eve@example.com,Los Angeles,48000
+6,Frank,40,frank@example.com,Chicago,92000
+7,Grace,33,grace@example.com,New York,78000
+8,Henry,27,henry@example.com,Los Angeles,62000
+9,Iris,31,iris@example.com,Chicago,88000
+10,Jack,29,jack@example.com,New York,71000
