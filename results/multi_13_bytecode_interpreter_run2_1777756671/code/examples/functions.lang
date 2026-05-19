@@ -1,0 +1,69 @@
+// Example 3: Functions
+// Demonstrates function definitions, parameters, return values,
+// recursion, and function calls.
+
+// A simple function that adds two numbers
+def add(a, b):
+    return a + b
+end
+
+result = add(3, 4)
+print result
+
+// A function with no parameters
+def greet():
+    print "Hello from a function!"
+end
+
+greet()
+
+// Recursive factorial
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    end
+end
+
+print factorial(5)
+print factorial(7)
+
+// Function that calls another function
+def square(x):
+    return x * x
+end
+
+def sum_of_squares(a, b):
+    return square(a) + square(b)
+end
+
+print sum_of_squares(3, 4)
+
+// Early return
+def is_even(n):
+    if n == 0:
+        return 1
+    end
+    if n == 1:
+        return 0
+    end
+    return is_even(n - 2)
+end
+
+print is_even(10)
+print is_even(7)
+
+// Function with string parameter
+def make_greeting(name):
+    return "Hello, " + name
+end
+
+// Note: string concatenation is not supported yet, so this won't work as expected.
+// Let's just print the name.
+def greet_person(name):
+    print "Greetings, "
+    print name
+end
+
+greet_person("Alice")

@@ -1,0 +1,20 @@
+// Example 1: Arithmetic and Variables
+// Demonstrates variable assignment, arithmetic with parentheses,
+// integer and float operations, and print.
+
+x = 10
+y = 3.5
+z = x + y * 2
+print z
+
+a = (x + 5) * (y - 1)
+print a
+
+b = 100 / 4
+print b
+
+c = -x
+print c
+
+s = "hello world"
+print s

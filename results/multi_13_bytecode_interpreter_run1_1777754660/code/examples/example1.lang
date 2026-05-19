@@ -1,0 +1,5 @@
+# Example 1: Variables, arithmetic, and print
+a = 5 + 3 * 2
+b = (a - 1) / 4
+print b
+print "Done!"
