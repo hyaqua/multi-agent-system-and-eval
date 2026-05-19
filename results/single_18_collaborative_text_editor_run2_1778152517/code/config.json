@@ -1,0 +1,13 @@
+{
+    "rooms": {
+        "default": {
+            "password": ""
+        },
+        "python-dev": {
+            "password": "py123"
+        },
+        "notes": {
+            "password": "secret"
+        }
+    }
+}

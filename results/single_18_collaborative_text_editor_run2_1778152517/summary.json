@@ -1,0 +1,33 @@
+{
+  "task_name": "collaborative_text_editor",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 3,
+  "total_tokens_used": 4102160,
+  "duration_seconds": 2525.16,
+  "num_files": 8,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 1086687,
+      "num_files": 6,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 30,
+      "tokens_so_far": 3003961,
+      "num_files": 6,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 2,
+      "tool_rounds": 12,
+      "tokens_so_far": 4102160,
+      "num_files": 8,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

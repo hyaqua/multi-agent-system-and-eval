@@ -1,0 +1,121 @@
+{
+  "version": "1.0",
+  "components": [
+    {
+      "id": "clk",
+      "type": "ClockGenerator",
+      "x": 50,
+      "y": 80,
+      "label": "CLK",
+      "config": {
+        "frequency": 1.0
+      }
+    },
+    {
+      "id": "not0",
+      "type": "NOTGate",
+      "x": 200,
+      "y": 60,
+      "label": "Bit0",
+      "config": {}
+    },
+    {
+      "id": "not1",
+      "type": "NOTGate",
+      "x": 350,
+      "y": 60,
+      "label": "Bit1",
+      "config": {}
+    },
+    {
+      "id": "not2",
+      "type": "NOTGate",
+      "x": 500,
+      "y": 60,
+      "label": "Bit2",
+      "config": {}
+    },
+    {
+      "id": "not3",
+      "type": "NOTGate",
+      "x": 650,
+      "y": 60,
+      "label": "Bit3",
+      "config": {}
+    },
+    {
+      "id": "out0",
+      "type": "OutputNode",
+      "x": 280,
+      "y": 140,
+      "label": "Q0",
+      "config": {}
+    },
+    {
+      "id": "out1",
+      "type": "OutputNode",
+      "x": 430,
+      "y": 140,
+      "label": "Q1",
+      "config": {}
+    },
+    {
+      "id": "out2",
+      "type": "OutputNode",
+      "x": 580,
+      "y": 140,
+      "label": "Q2",
+      "config": {}
+    },
+    {
+      "id": "out3",
+      "type": "OutputNode",
+      "x": 730,
+      "y": 140,
+      "label": "Q3",
+      "config": {}
+    }
+  ],
+  "wires": [
+    {
+      "id": "w0",
+      "from_pin": "clk:out_0",
+      "to_pin": "not0:in_0"
+    },
+    {
+      "id": "w1",
+      "from_pin": "not0:out_0",
+      "to_pin": "not1:in_0"
+    },
+    {
+      "id": "w2",
+      "from_pin": "not1:out_0",
+      "to_pin": "not2:in_0"
+    },
+    {
+      "id": "w3",
+      "from_pin": "not2:out_0",
+      "to_pin": "not3:in_0"
+    },
+    {
+      "id": "w4",
+      "from_pin": "not0:out_0",
+      "to_pin": "out0:in_0"
+    },
+    {
+      "id": "w5",
+      "from_pin": "not1:out_0",
+      "to_pin": "out1:in_0"
+    },
+    {
+      "id": "w6",
+      "from_pin": "not2:out_0",
+      "to_pin": "out2:in_0"
+    },
+    {
+      "id": "w7",
+      "from_pin": "not3:out_0",
+      "to_pin": "out3:in_0"
+    }
+  ]
+}

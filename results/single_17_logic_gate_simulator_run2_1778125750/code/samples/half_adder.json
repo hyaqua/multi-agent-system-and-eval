@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "components": [
+    {"id": "comp_0", "type": "INPUT", "x": 100, "y": 100, "label": "A", "properties": {}},
+    {"id": "comp_1", "type": "INPUT", "x": 100, "y": 200, "label": "B", "properties": {}},
+    {"id": "comp_2", "type": "XOR", "x": 300, "y": 130, "label": "Sum", "properties": {}},
+    {"id": "comp_3", "type": "AND", "x": 300, "y": 230, "label": "Carry", "properties": {}},
+    {"id": "comp_4", "type": "OUTPUT", "x": 500, "y": 130, "label": "S", "properties": {}},
+    {"id": "comp_5", "type": "OUTPUT", "x": 500, "y": 230, "label": "C", "properties": {}}
+  ],
+  "wires": [
+    {"id": "wire_0", "from_component": "comp_0", "from_pin": "out", "to_component": "comp_2", "to_pin": "in0"},
+    {"id": "wire_1", "from_component": "comp_1", "from_pin": "out", "to_component": "comp_2", "to_pin": "in1"},
+    {"id": "wire_2", "from_component": "comp_0", "from_pin": "out", "to_component": "comp_3", "to_pin": "in0"},
+    {"id": "wire_3", "from_component": "comp_1", "from_pin": "out", "to_component": "comp_3", "to_pin": "in1"},
+    {"id": "wire_4", "from_component": "comp_2", "from_pin": "out", "to_component": "comp_4", "to_pin": "in0"},
+    {"id": "wire_5", "from_component": "comp_3", "from_pin": "out", "to_component": "comp_5", "to_pin": "in0"}
+  ]
+}

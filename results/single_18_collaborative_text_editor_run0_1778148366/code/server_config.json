@@ -1,0 +1,19 @@
+{
+    "port": 9999,
+    "rooms": {
+        "default": {
+            "password": "",
+            "file": "default.txt"
+        },
+        "python": {
+            "password": "py123",
+            "file": "code.py"
+        },
+        "secret": {
+            "password": "secret123",
+            "file": "secret.txt"
+        }
+    },
+    "log_file": "/tmp/collab_editor_server.log",
+    "persist_dir": "/tmp/collab_editor_docs"
+}

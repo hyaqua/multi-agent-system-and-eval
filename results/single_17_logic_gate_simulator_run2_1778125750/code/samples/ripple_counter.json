@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "components": [
+    {"id": "comp_0", "type": "CLOCK", "x": 80, "y": 200, "label": "CLK", "properties": {"frequency": 2.0}},
+    {"id": "comp_1", "type": "NOT", "x": 220, "y": 160, "label": "N1", "properties": {}},
+    {"id": "comp_2", "type": "NOT", "x": 360, "y": 160, "label": "N2", "properties": {}},
+    {"id": "comp_3", "type": "NOT", "x": 500, "y": 160, "label": "N3", "properties": {}},
+    {"id": "comp_4", "type": "AND", "x": 220, "y": 300, "label": "A1", "properties": {}},
+    {"id": "comp_5", "type": "OR", "x": 360, "y": 300, "label": "O1", "properties": {}},
+    {"id": "comp_6", "type": "SEVEN_SEGMENT", "x": 640, "y": 140, "label": "DISP", "properties": {}},
+    {"id": "comp_7", "type": "OUTPUT", "x": 220, "y": 80, "label": "CLK_OUT", "properties": {}}
+  ],
+  "wires": [
+    {"id": "wire_0", "from_component": "comp_0", "from_pin": "out", "to_component": "comp_7", "to_pin": "in0"},
+    {"id": "wire_1", "from_component": "comp_0", "from_pin": "out", "to_component": "comp_1", "to_pin": "in0"},
+    {"id": "wire_2", "from_component": "comp_1", "from_pin": "out", "to_component": "comp_2", "to_pin": "in0"},
+    {"id": "wire_3", "from_component": "comp_2", "from_pin": "out", "to_component": "comp_3", "to_pin": "in0"},
+    {"id": "wire_4", "from_component": "comp_0", "from_pin": "out", "to_component": "comp_6", "to_pin": "a"},
+    {"id": "wire_5", "from_component": "comp_1", "from_pin": "out", "to_component": "comp_6", "to_pin": "b"},
+    {"id": "wire_6", "from_component": "comp_2", "from_pin": "out", "to_component": "comp_6", "to_pin": "c"},
+    {"id": "wire_7", "from_component": "comp_3", "from_pin": "out", "to_component": "comp_6", "to_pin": "d"},
+    {"id": "wire_8", "from_component": "comp_0", "from_pin": "out", "to_component": "comp_4", "to_pin": "in0"},
+    {"id": "wire_9", "from_component": "comp_1", "from_pin": "out", "to_component": "comp_4", "to_pin": "in1"},
+    {"id": "wire_10", "from_component": "comp_4", "from_pin": "out", "to_component": "comp_6", "to_pin": "e"},
+    {"id": "wire_11", "from_component": "comp_2", "from_pin": "out", "to_component": "comp_5", "to_pin": "in0"},
+    {"id": "wire_12", "from_component": "comp_3", "from_pin": "out", "to_component": "comp_5", "to_pin": "in1"},
+    {"id": "wire_13", "from_component": "comp_5", "from_pin": "out", "to_component": "comp_6", "to_pin": "f"},
+    {"id": "wire_14", "from_component": "comp_3", "from_pin": "out", "to_component": "comp_6", "to_pin": "g"}
+  ]
+}

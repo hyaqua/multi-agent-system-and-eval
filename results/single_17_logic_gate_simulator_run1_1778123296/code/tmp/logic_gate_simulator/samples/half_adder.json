@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "components": [
+    {
+      "id": "in_a",
+      "type": "InputNode",
+      "x": 100,
+      "y": 100,
+      "label": "A",
+      "config": {}
+    },
+    {
+      "id": "in_b",
+      "type": "InputNode",
+      "x": 100,
+      "y": 250,
+      "label": "B",
+      "config": {}
+    },
+    {
+      "id": "xor1",
+      "type": "XORGate",
+      "x": 250,
+      "y": 150,
+      "label": "Sum",
+      "config": {}
+    },
+    {
+      "id": "and1",
+      "type": "ANDGate",
+      "x": 250,
+      "y": 280,
+      "label": "Carry",
+      "config": {}
+    },
+    {
+      "id": "out_sum",
+      "type": "OutputNode",
+      "x": 450,
+      "y": 170,
+      "label": "Sum",
+      "config": {}
+    },
+    {
+      "id": "out_carry",
+      "type": "OutputNode",
+      "x": 450,
+      "y": 300,
+      "label": "Carry",
+      "config": {}
+    }
+  ],
+  "wires": [
+    {
+      "id": "w1",
+      "from_pin": "in_a:out_0",
+      "to_pin": "xor1:in_0"
+    },
+    {
+      "id": "w2",
+      "from_pin": "in_b:out_0",
+      "to_pin": "xor1:in_1"
+    },
+    {
+      "id": "w3",
+      "from_pin": "in_a:out_0",
+      "to_pin": "and1:in_0"
+    },
+    {
+      "id": "w4",
+      "from_pin": "in_b:out_0",
+      "to_pin": "and1:in_1"
+    },
+    {
+      "id": "w5",
+      "from_pin": "xor1:out_0",
+      "to_pin": "out_sum:in_0"
+    },
+    {
+      "id": "w6",
+      "from_pin": "and1:out_0",
+      "to_pin": "out_carry:in_0"
+    }
+  ]
+}
