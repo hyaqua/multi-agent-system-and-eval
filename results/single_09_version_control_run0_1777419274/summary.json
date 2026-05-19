@@ -1,0 +1,25 @@
+{
+  "task_name": "version_control",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 2,
+  "total_tokens_used": 1039459,
+  "duration_seconds": 1087.83,
+  "num_files": 4,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 370542,
+      "num_files": 1,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 22,
+      "tokens_so_far": 1039459,
+      "num_files": 4,
+      "has_progress_report": false
+    }
+  ]
+}

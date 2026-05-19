@@ -1,0 +1,18 @@
+{
+  "task_name": "tetris_game",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 1,
+  "total_tokens_used": 1000745,
+  "duration_seconds": 882.92,
+  "num_files": 1,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 1000745,
+      "num_files": 1,
+      "has_progress_report": false
+    }
+  ]
+}

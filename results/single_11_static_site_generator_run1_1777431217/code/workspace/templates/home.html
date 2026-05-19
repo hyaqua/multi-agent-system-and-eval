@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site Generator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/">Static Site Generator</a></h1>
+            {{nav}}
+        </div>
+    </header>
+
+    <main class="container">
+        {{content}}
+        <section class="intro">
+            <h2>About This Generator</h2>
+            <p>A lightweight static site generator written in Python using only the standard library. Write content in Markdown, apply templates, and generate a complete static website.</p>
+            <p><a href="/about/" class="button">Learn More</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Static Site Generator. Built with Python.</p>
+        </div>
+    </footer>
+</body>
+</html>

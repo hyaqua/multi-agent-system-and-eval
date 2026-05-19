@@ -1,0 +1,183 @@
+/* Base styles for My Static Site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fafafa;
+}
+
+header {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h1 a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #3498db;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #e8f0fe;
+    color: #2c3e50;
+}
+
+main {
+    min-height: 60vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin: 1em 0 0.5em;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Post / Page styles */
+.post, .page {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-meta, .post-tags {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Post list (blog index) */
+.post-list {
+    list-style: none;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list li:last-child {
+    border-bottom: none;
+}
+
+.post-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+/* Code blocks */
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0 0 1em 2em;
+}
+
+li {
+    margin-bottom: 0.25em;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 4px solid #3498db;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background: #f8f9fa;
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2em 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+}

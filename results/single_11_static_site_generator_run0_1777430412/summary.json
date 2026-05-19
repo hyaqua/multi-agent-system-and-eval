@@ -1,0 +1,25 @@
+{
+  "task_name": "static_site_generator",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 2,
+  "total_tokens_used": 1006635,
+  "duration_seconds": 800.38,
+  "num_files": 21,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 486266,
+      "num_files": 18,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 16,
+      "tokens_so_far": 1006635,
+      "num_files": 21,
+      "has_progress_report": false
+    }
+  ]
+}

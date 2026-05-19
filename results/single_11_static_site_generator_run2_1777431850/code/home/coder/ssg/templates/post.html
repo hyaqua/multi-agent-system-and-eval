@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - My Static Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title"><a href="/">My Static Site</a></h1>
+        <nav class="main-nav">
+            {{navigation}}
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h1 class="post-title">{{title}}</h1>
+            <div class="post-meta">
+                <time class="post-date">{{date}}</time>
+                <span class="post-tags">{{tags}}</span>
+            </div>
+            <div class="post-content">
+                {{content}}
+            </div>
+        </article>
+        <p class="back-link"><a href="/">&larr; Back to Blog</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Static Site. Generated with Static Site Generator.</p>
+    </footer>
+</body>
+</html>

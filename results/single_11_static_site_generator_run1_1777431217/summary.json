@@ -1,0 +1,32 @@
+{
+  "task_name": "static_site_generator",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 3,
+  "total_tokens_used": 1003959,
+  "duration_seconds": 627.48,
+  "num_files": 15,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 306475,
+      "num_files": 15,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 30,
+      "tokens_so_far": 975956,
+      "num_files": 15,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 2,
+      "tool_rounds": 1,
+      "tokens_so_far": 1003959,
+      "num_files": 15,
+      "has_progress_report": false
+    }
+  ]
+}
