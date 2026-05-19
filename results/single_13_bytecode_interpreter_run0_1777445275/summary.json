@@ -1,0 +1,25 @@
+{
+  "task_name": "bytecode_interpreter",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 2,
+  "total_tokens_used": 1018036,
+  "duration_seconds": 966.45,
+  "num_files": 9,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 653909,
+      "num_files": 8,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 11,
+      "tokens_so_far": 1018036,
+      "num_files": 9,
+      "has_progress_report": false
+    }
+  ]
+}

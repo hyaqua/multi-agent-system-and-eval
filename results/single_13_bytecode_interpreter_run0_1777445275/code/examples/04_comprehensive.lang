@@ -1,0 +1,77 @@
+// Example 4: Comprehensive demo of all language features
+// Variables, arithmetic, conditionals, loops, functions, recursion
+
+// ---- Variables and arithmetic ----
+x = 10
+y = 3
+print "x = " + "10, y = 3"
+
+print "x + y = "
+print x + y
+
+print "x / y = "
+print x / y
+
+// ---- Operator precedence ----
+print "2 + 3 * 4 = "
+print 2 + 3 * 4
+
+print "(2 + 3) * 4 = "
+print (2 + 3) * 4
+
+// ---- Comparisons ----
+print "x == y: "
+print x == y
+print "x != y: "
+print x != y
+print "x > y: "
+print x > y
+
+// ---- If/else ----
+if x > y {
+    print "x is greater"
+} else {
+    print "y is greater or equal"
+}
+
+// ---- While loop ----
+print "Counting down:"
+count = 5
+while count > 0 {
+    print count
+    count = count - 1
+}
+
+// ---- Functions ----
+def factorial(n) {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+print "factorial(5) = "
+print factorial(5)
+
+def is_even(n) {
+    return (n / 2) * 2 == n
+}
+
+print "is 4 even? "
+print is_even(4)
+print "is 7 even? "
+print is_even(7)
+
+// ---- Function with multiple params ----
+def power(base, exp) {
+    result = 1
+    i = 0
+    while i < exp {
+        result = result * base
+        i = i + 1
+    }
+    return result
+}
+
+print "2^10 = "
+print power(2, 10)

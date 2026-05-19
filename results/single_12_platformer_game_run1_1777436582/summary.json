@@ -1,0 +1,19 @@
+{
+  "task_name": "platformer_game",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 1,
+  "total_tokens_used": 316555,
+  "duration_seconds": 641.69,
+  "num_files": 7,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 21,
+      "tokens_so_far": 316555,
+      "num_files": 7,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "task_name": "kv_store",
+  "system": "single_agent",
+  "final_status": "token_limit",
+  "total_iterations": 2,
+  "total_tokens_used": 1020632,
+  "duration_seconds": 1118.63,
+  "num_files": 5,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 682692,
+      "num_files": 5,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 8,
+      "tokens_so_far": 1020632,
+      "num_files": 5,
+      "has_progress_report": false
+    }
+  ]
+}

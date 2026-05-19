@@ -1,0 +1,58 @@
+// Example 3: Functions with parameters and return values
+// Demonstrates: function definitions, parameters, return values, recursion
+
+// Simple function
+def greet(name) {
+    print "Hello, " + name
+}
+
+greet("Alice")
+greet("Bob")
+
+// Function with return value
+def add(a, b) {
+    return a + b
+}
+
+result = add(10, 20)
+print result
+print add(100, 200)
+
+// Multiple parameters
+def multiply(a, b, c) {
+    return a * b * c
+}
+
+print multiply(2, 3, 4)
+
+// Function calling another function
+def square(x) {
+    return x * x
+}
+
+def sum_of_squares(a, b) {
+    return add(square(a), square(b))
+}
+
+print sum_of_squares(3, 4)
+
+// Recursive function - factorial
+def factorial(n) {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+print factorial(5)
+print factorial(10)
+
+// Fibonacci
+def fibonacci(n) {
+    if n <= 1 {
+        return n
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+print fibonacci(10)

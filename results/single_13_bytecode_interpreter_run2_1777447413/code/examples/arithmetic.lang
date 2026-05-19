@@ -1,0 +1,30 @@
+// Example 1: Arithmetic and Printing
+// Demonstrates: variables, arithmetic with precedence, print, comments,
+//               integer/float/string literals, comparison operators
+
+x = 10;
+y = x * 3 + 5;
+print(x);
+print(y);
+
+// Operator precedence: * and / before + and -
+print(2 + 3 * 4);
+print((2 + 3) * 4);
+
+// Float and integer literals
+pi = 3.14;
+print(pi * 2.0);
+
+// String literals
+print("Hello, World!");
+print("Line 1\nLine 2");
+
+// Comparison operators
+a = 10;
+b = 20;
+print(a == b);
+print(a != b);
+print(a < b);
+print(a > b);
+print(a <= b);
+print(a >= b);

@@ -1,0 +1,31 @@
+// Example 1: Basic arithmetic, variables, and print
+// Demonstrates: variable assignment, arithmetic, operator precedence, print
+
+x = 10
+y = 20
+print x + y
+print x * y
+print y - x
+print y / x
+
+// Operator precedence
+result = 2 + 3 * 4
+print result
+
+result2 = (2 + 3) * 4
+print result2
+
+// Float literals
+pi = 3.14
+radius = 5.0
+area = pi * radius * radius
+print area
+
+// String literals
+greeting = "Hello, World!"
+print greeting
+
+// Negation
+neg = -10
+print neg
+print -neg

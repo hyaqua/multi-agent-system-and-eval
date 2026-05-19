@@ -1,0 +1,15 @@
+# Example 1: Fibonacci sequence with functions and loops
+# Demonstrates: function definitions, function calls, parameters,
+# return values, while loops, if/else, arithmetic, print, variables
+
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+# Print the first 10 Fibonacci numbers
+i = 0
+while i < 10:
+    print fib(i)
+    i = i + 1

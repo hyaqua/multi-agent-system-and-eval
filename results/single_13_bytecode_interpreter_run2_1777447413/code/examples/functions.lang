@@ -1,0 +1,42 @@
+// Example 3: Functions
+// Demonstrates: function definitions, parameters, return values, recursion
+
+def add(a, b) {
+    return a + b;
+}
+
+print(add(3, 4));
+print(add(10, 20));
+
+// Factorial with recursion
+def factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+print(factorial(5));
+print(factorial(7));
+
+// Function with no return value (implicitly returns null)
+def greet(name) {
+    print("Hello,");
+    print(name);
+}
+greet("World");
+
+// Multiple parameters
+def multiply3(x, y, z) {
+    return x * y * z;
+}
+print(multiply3(2, 3, 4));
+
+// Function calling another function
+def square(x) {
+    return x * x;
+}
+def sum_of_squares(a, b) {
+    return square(a) + square(b);
+}
+print(sum_of_squares(3, 4));

@@ -1,0 +1,39 @@
+# Example 2: Conditionals, comparisons, and arithmetic
+# Demonstrates: if/else, comparison operators (==, !=, <, >, <=, >=),
+# arithmetic with precedence, parentheses, variables, print
+
+x = 10
+y = 20
+
+# Arithmetic with precedence
+result = x + y * 2 - 5 / 2
+print result
+
+# Comparisons
+if x < y:
+    print x
+else:
+    print y
+
+if x == 10:
+    print x
+
+if x != y:
+    print x + y
+
+if x >= 5:
+    print x * 2
+
+if y <= 20:
+    print y - x
+
+# Nested conditionals
+a = 3
+b = 5
+if a < b:
+    if a > 0:
+        print a
+    else:
+        print 0
+else:
+    print b

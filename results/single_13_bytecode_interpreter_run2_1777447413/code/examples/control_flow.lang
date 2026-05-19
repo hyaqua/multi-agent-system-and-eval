@@ -1,0 +1,43 @@
+// Example 2: Conditionals and Loops
+// Demonstrates: if/else, while loops, nested conditionals
+
+n = 10;
+if (n > 5) {
+    print(1);
+} else {
+    print(0);
+}
+
+// While loop counting down
+i = 5;
+while (i > 0) {
+    print(i);
+    i = i - 1;
+}
+print("Done!");
+
+// Summation loop
+sum = 0;
+j = 1;
+while (j <= 10) {
+    sum = sum + j;
+    j = j + 1;
+}
+print(sum);
+
+// Nested conditionals
+val = 15;
+if (val > 10) {
+    if (val < 20) {
+        print(999);
+    }
+}
+
+// Using comparisons in conditionals
+x = 7;
+if (x == 7) {
+    print("seven");
+}
+if (x != 8) {
+    print("not eight");
+}
