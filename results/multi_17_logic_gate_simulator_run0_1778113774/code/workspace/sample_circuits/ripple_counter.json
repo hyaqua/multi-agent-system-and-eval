@@ -1,0 +1,225 @@
+{
+  "id_counter": 16,
+  "components": [
+    {
+      "id": "comp_1",
+      "type": "CLOCK",
+      "pos": [0, 0],
+      "name": "Clock",
+      "frequency": 2.0
+    },
+    {
+      "id": "comp_2",
+      "type": "NOT",
+      "pos": [140, 0],
+      "name": "Stage0",
+      "frequency": null
+    },
+    {
+      "id": "comp_3",
+      "type": "NOT",
+      "pos": [280, 0],
+      "name": "Stage1",
+      "frequency": null
+    },
+    {
+      "id": "comp_4",
+      "type": "NOT",
+      "pos": [420, 0],
+      "name": "Stage2",
+      "frequency": null
+    },
+    {
+      "id": "comp_5",
+      "type": "NOT",
+      "pos": [560, 0],
+      "name": "Stage3",
+      "frequency": null
+    },
+    {
+      "id": "comp_6",
+      "type": "OUTPUT",
+      "pos": [140, -80],
+      "name": "Q0",
+      "frequency": null
+    },
+    {
+      "id": "comp_7",
+      "type": "OUTPUT",
+      "pos": [280, -80],
+      "name": "Q1",
+      "frequency": null
+    },
+    {
+      "id": "comp_8",
+      "type": "OUTPUT",
+      "pos": [420, -80],
+      "name": "Q2",
+      "frequency": null
+    },
+    {
+      "id": "comp_9",
+      "type": "OUTPUT",
+      "pos": [560, -80],
+      "name": "Q3",
+      "frequency": null
+    },
+    {
+      "id": "comp_10",
+      "type": "INPUT",
+      "pos": [-80, 120],
+      "name": "Enable",
+      "frequency": null,
+      "state": true
+    },
+    {
+      "id": "comp_11",
+      "type": "AND",
+      "pos": [0, 60],
+      "name": "Gate0",
+      "frequency": null
+    },
+    {
+      "id": "comp_12",
+      "type": "AND",
+      "pos": [140, 60],
+      "name": "Gate1",
+      "frequency": null
+    },
+    {
+      "id": "comp_13",
+      "type": "AND",
+      "pos": [280, 60],
+      "name": "Gate2",
+      "frequency": null
+    },
+    {
+      "id": "comp_14",
+      "type": "AND",
+      "pos": [420, 60],
+      "name": "Gate3",
+      "frequency": null
+    },
+    {
+      "id": "comp_15",
+      "type": "SEVEN_SEG",
+      "pos": [660, -20],
+      "name": "Display",
+      "frequency": null
+    },
+    {
+      "id": "comp_16",
+      "type": "OUTPUT",
+      "pos": [140, 120],
+      "name": "G0_out",
+      "frequency": null
+    }
+  ],
+  "wires": [
+    {
+      "from": { "component": "comp_1", "pin": "out" },
+      "to": { "component": "comp_2", "pin": "in" },
+      "points": [[25, 0], [70, 0], [70, 0], [100, 0]]
+    },
+    {
+      "from": { "component": "comp_2", "pin": "out" },
+      "to": { "component": "comp_3", "pin": "in" },
+      "points": [[180, 0], [230, 0], [230, 0], [240, 0]]
+    },
+    {
+      "from": { "component": "comp_3", "pin": "out" },
+      "to": { "component": "comp_4", "pin": "in" },
+      "points": [[320, 0], [370, 0], [370, 0], [380, 0]]
+    },
+    {
+      "from": { "component": "comp_4", "pin": "out" },
+      "to": { "component": "comp_5", "pin": "in" },
+      "points": [[460, 0], [510, 0], [510, 0], [520, 0]]
+    },
+    {
+      "from": { "component": "comp_2", "pin": "out" },
+      "to": { "component": "comp_6", "pin": "in" },
+      "points": [[180, 0], [180, -80], [180, -80], [120, -80]]
+    },
+    {
+      "from": { "component": "comp_3", "pin": "out" },
+      "to": { "component": "comp_7", "pin": "in" },
+      "points": [[320, 0], [320, -80], [320, -80], [260, -80]]
+    },
+    {
+      "from": { "component": "comp_4", "pin": "out" },
+      "to": { "component": "comp_8", "pin": "in" },
+      "points": [[460, 0], [460, -80], [460, -80], [400, -80]]
+    },
+    {
+      "from": { "component": "comp_5", "pin": "out" },
+      "to": { "component": "comp_9", "pin": "in" },
+      "points": [[600, 0], [600, -80], [600, -80], [540, -80]]
+    },
+    {
+      "from": { "component": "comp_10", "pin": "out" },
+      "to": { "component": "comp_11", "pin": "in0" },
+      "points": [[-60, 120], [-40, 120], [-40, 47.5], [-40, 47.5]]
+    },
+    {
+      "from": { "component": "comp_1", "pin": "out" },
+      "to": { "component": "comp_11", "pin": "in1" },
+      "points": [[25, 0], [25, 72.5], [25, 72.5], [-40, 72.5]]
+    },
+    {
+      "from": { "component": "comp_11", "pin": "out" },
+      "to": { "component": "comp_12", "pin": "in0" },
+      "points": [[40, 60], [100, 60], [100, 47.5], [100, 47.5]]
+    },
+    {
+      "from": { "component": "comp_2", "pin": "out" },
+      "to": { "component": "comp_12", "pin": "in1" },
+      "points": [[180, 0], [180, 72.5], [180, 72.5], [100, 72.5]]
+    },
+    {
+      "from": { "component": "comp_12", "pin": "out" },
+      "to": { "component": "comp_13", "pin": "in0" },
+      "points": [[180, 60], [240, 60], [240, 47.5], [240, 47.5]]
+    },
+    {
+      "from": { "component": "comp_3", "pin": "out" },
+      "to": { "component": "comp_13", "pin": "in1" },
+      "points": [[320, 0], [320, 72.5], [320, 72.5], [240, 72.5]]
+    },
+    {
+      "from": { "component": "comp_13", "pin": "out" },
+      "to": { "component": "comp_14", "pin": "in0" },
+      "points": [[320, 60], [380, 60], [380, 47.5], [380, 47.5]]
+    },
+    {
+      "from": { "component": "comp_4", "pin": "out" },
+      "to": { "component": "comp_14", "pin": "in1" },
+      "points": [[460, 0], [460, 72.5], [460, 72.5], [380, 72.5]]
+    },
+    {
+      "from": { "component": "comp_14", "pin": "out" },
+      "to": { "component": "comp_16", "pin": "in" },
+      "points": [[460, 60], [500, 120], [500, 120], [120, 120]]
+    },
+    {
+      "from": { "component": "comp_2", "pin": "out" },
+      "to": { "component": "comp_15", "pin": "a" },
+      "points": [[180, 0], [620, -120], [620, -120], [580, -62]]
+    },
+    {
+      "from": { "component": "comp_3", "pin": "out" },
+      "to": { "component": "comp_15", "pin": "b" },
+      "points": [[320, 0], [620, -60], [620, -60], [680, -55]]
+    },
+    {
+      "from": { "component": "comp_4", "pin": "out" },
+      "to": { "component": "comp_15", "pin": "c" },
+      "points": [[460, 0], [620, 0], [620, 0], [680, 1]]
+    },
+    {
+      "from": { "component": "comp_5", "pin": "out" },
+      "to": { "component": "comp_15", "pin": "d" },
+      "points": [[600, 0], [620, 60], [620, 60], [580, 42]]
+    }
+  ]
+}

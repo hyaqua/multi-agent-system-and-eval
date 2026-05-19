@@ -1,0 +1,78 @@
+{
+  "components": [
+    {
+      "id": "c1",
+      "type": "INPUT",
+      "x": 100,
+      "y": 80,
+      "config": {},
+      "label": "A"
+    },
+    {
+      "id": "c2",
+      "type": "INPUT",
+      "x": 100,
+      "y": 160,
+      "config": {},
+      "label": "B"
+    },
+    {
+      "id": "c3",
+      "type": "XOR",
+      "x": 300,
+      "y": 80,
+      "config": {},
+      "label": "Sum"
+    },
+    {
+      "id": "c4",
+      "type": "AND",
+      "x": 300,
+      "y": 160,
+      "config": {},
+      "label": "Carry"
+    },
+    {
+      "id": "c5",
+      "type": "OUTPUT",
+      "x": 500,
+      "y": 80,
+      "config": {},
+      "label": "S"
+    },
+    {
+      "id": "c6",
+      "type": "OUTPUT",
+      "x": 500,
+      "y": 160,
+      "config": {},
+      "label": "C"
+    }
+  ],
+  "wires": [
+    {
+      "from": ["c1", "out"],
+      "to": ["c3", "in0"]
+    },
+    {
+      "from": ["c2", "out"],
+      "to": ["c3", "in1"]
+    },
+    {
+      "from": ["c1", "out"],
+      "to": ["c4", "in0"]
+    },
+    {
+      "from": ["c2", "out"],
+      "to": ["c4", "in1"]
+    },
+    {
+      "from": ["c3", "out"],
+      "to": ["c5", "in"]
+    },
+    {
+      "from": ["c4", "out"],
+      "to": ["c6", "in"]
+    }
+  ]
+}

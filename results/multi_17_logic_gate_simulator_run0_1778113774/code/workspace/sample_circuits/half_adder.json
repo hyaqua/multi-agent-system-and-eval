@@ -1,0 +1,81 @@
+{
+  "id_counter": 6,
+  "components": [
+    {
+      "id": "comp_1",
+      "type": "INPUT",
+      "pos": [0, -60],
+      "name": "A",
+      "frequency": null,
+      "state": false
+    },
+    {
+      "id": "comp_2",
+      "type": "INPUT",
+      "pos": [0, 60],
+      "name": "B",
+      "frequency": null,
+      "state": false
+    },
+    {
+      "id": "comp_3",
+      "type": "XOR",
+      "pos": [200, -60],
+      "name": "",
+      "frequency": null
+    },
+    {
+      "id": "comp_4",
+      "type": "AND",
+      "pos": [200, 60],
+      "name": "",
+      "frequency": null
+    },
+    {
+      "id": "comp_5",
+      "type": "OUTPUT",
+      "pos": [400, -60],
+      "name": "Sum",
+      "frequency": null
+    },
+    {
+      "id": "comp_6",
+      "type": "OUTPUT",
+      "pos": [400, 60],
+      "name": "Carry",
+      "frequency": null
+    }
+  ],
+  "wires": [
+    {
+      "from": { "component": "comp_1", "pin": "out" },
+      "to": { "component": "comp_3", "pin": "in0" },
+      "points": [[20, -60], [100, -60], [100, -72.5], [160, -72.5]]
+    },
+    {
+      "from": { "component": "comp_1", "pin": "out" },
+      "to": { "component": "comp_4", "pin": "in0" },
+      "points": [[20, -60], [100, -60], [100, 47.5], [160, 47.5]]
+    },
+    {
+      "from": { "component": "comp_2", "pin": "out" },
+      "to": { "component": "comp_3", "pin": "in1" },
+      "points": [[20, 60], [100, 60], [100, -47.5], [160, -47.5]]
+    },
+    {
+      "from": { "component": "comp_2", "pin": "out" },
+      "to": { "component": "comp_4", "pin": "in1" },
+      "points": [[20, 60], [100, 60], [100, 72.5], [160, 72.5]]
+    },
+    {
+      "from": { "component": "comp_3", "pin": "out" },
+      "to": { "component": "comp_5", "pin": "in" },
+      "points": [[240, -60], [320, -60], [320, -60], [380, -60]]
+    },
+    {
+      "from": { "component": "comp_4", "pin": "out" },
+      "to": { "component": "comp_6", "pin": "in" },
+      "points": [[240, 60], [320, 60], [320, 60], [380, 60]]
+    }
+  ]
+}

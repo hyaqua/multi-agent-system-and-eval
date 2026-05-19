@@ -1,0 +1,59 @@
+-- Example Queries for SQL Query Engine
+-- Copy-paste these into the REPL or run them one by one.
+
+-- 1. LOAD: Load CSV files into tables
+LOAD users FROM 'samples_users.csv';
+LOAD orders FROM 'samples_orders.csv';
+
+-- 2. SELECT *: View all data
+SELECT * FROM users;
+SELECT * FROM orders;
+
+-- 3. SELECT specific columns
+SELECT name, age FROM users;
+
+-- 4. WHERE with comparison operators
+SELECT name, age FROM users WHERE age > 28;
+SELECT name, age FROM users WHERE age = 28;
+SELECT name, age FROM users WHERE age != 30;
+SELECT name, age FROM users WHERE age < 30;
+SELECT name, age FROM users WHERE age <= 28;
+SELECT name, age FROM users WHERE age >= 30;
+
+-- 5. WHERE with AND / OR
+SELECT name, age FROM users WHERE age > 25 AND age < 35;
+SELECT name, age FROM users WHERE age < 28 OR age > 32;
+
+-- 6. ORDER BY (ASC and DESC)
+SELECT name, age FROM users ORDER BY age ASC;
+SELECT name, age FROM users ORDER BY age DESC;
+SELECT name, age FROM users ORDER BY name ASC;
+
+-- 7. LIMIT
+SELECT name, age FROM users LIMIT 3;
+SELECT name, age FROM users ORDER BY age DESC LIMIT 2;
+
+-- 8. Aggregate functions (without GROUP BY)
+SELECT COUNT(*) FROM users;
+SELECT SUM(amount) FROM orders;
+SELECT AVG(age) FROM users;
+SELECT MIN(amount) FROM orders;
+SELECT MAX(amount) FROM orders;
+
+-- 9. GROUP BY with aggregates
+SELECT age, COUNT(*) FROM users GROUP BY age;
+SELECT user_id, COUNT(*) FROM orders GROUP BY user_id;
+SELECT user_id, SUM(amount) FROM orders GROUP BY user_id;
+SELECT user_id, AVG(amount) FROM orders GROUP BY user_id;
+
+-- 10. INNER JOIN
+SELECT * FROM users INNER JOIN orders ON users.id = orders.user_id;
+
+-- 11. INSERT INTO
+INSERT INTO users VALUES (7, 'Grace', 29);
+
+-- 12. Verify the insert
+SELECT * FROM users;
+
+-- 13. SAVE: Write a table back to CSV
+SAVE users TO 'samples_users_backup.csv';

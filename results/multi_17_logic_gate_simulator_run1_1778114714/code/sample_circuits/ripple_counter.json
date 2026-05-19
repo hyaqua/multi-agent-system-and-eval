@@ -1,0 +1,271 @@
+{
+  "components": [
+    {
+      "id": "c1",
+      "type": "CLOCK",
+      "x": 60,
+      "y": 60,
+      "config": {"frequency": 1.0},
+      "label": "CLK"
+    },
+    {
+      "id": "c2",
+      "type": "NOT",
+      "x": 160,
+      "y": 60,
+      "config": {},
+      "label": "CLK'"
+    },
+    {
+      "id": "n1a",
+      "type": "NAND",
+      "x": 280,
+      "y": 20,
+      "config": {},
+      "label": "M0a"
+    },
+    {
+      "id": "n1b",
+      "type": "NAND",
+      "x": 280,
+      "y": 100,
+      "config": {},
+      "label": "M0b"
+    },
+    {
+      "id": "n1c",
+      "type": "NAND",
+      "x": 400,
+      "y": 20,
+      "config": {},
+      "label": "S0a"
+    },
+    {
+      "id": "n1d",
+      "type": "NAND",
+      "x": 400,
+      "y": 100,
+      "config": {},
+      "label": "S0b"
+    },
+    {
+      "id": "inv0",
+      "type": "NOT",
+      "x": 520,
+      "y": 60,
+      "config": {},
+      "label": "~Q0"
+    },
+    {
+      "id": "n2a",
+      "type": "NAND",
+      "x": 660,
+      "y": 20,
+      "config": {},
+      "label": "M1a"
+    },
+    {
+      "id": "n2b",
+      "type": "NAND",
+      "x": 660,
+      "y": 100,
+      "config": {},
+      "label": "M1b"
+    },
+    {
+      "id": "n2c",
+      "type": "NAND",
+      "x": 780,
+      "y": 20,
+      "config": {},
+      "label": "S1a"
+    },
+    {
+      "id": "n2d",
+      "type": "NAND",
+      "x": 780,
+      "y": 100,
+      "config": {},
+      "label": "S1b"
+    },
+    {
+      "id": "inv1",
+      "type": "NOT",
+      "x": 900,
+      "y": 60,
+      "config": {},
+      "label": "~Q1"
+    },
+    {
+      "id": "n3a",
+      "type": "NAND",
+      "x": 1040,
+      "y": 20,
+      "config": {},
+      "label": "M2a"
+    },
+    {
+      "id": "n3b",
+      "type": "NAND",
+      "x": 1040,
+      "y": 100,
+      "config": {},
+      "label": "M2b"
+    },
+    {
+      "id": "n3c",
+      "type": "NAND",
+      "x": 1160,
+      "y": 20,
+      "config": {},
+      "label": "S2a"
+    },
+    {
+      "id": "n3d",
+      "type": "NAND",
+      "x": 1160,
+      "y": 100,
+      "config": {},
+      "label": "S2b"
+    },
+    {
+      "id": "inv2",
+      "type": "NOT",
+      "x": 1280,
+      "y": 60,
+      "config": {},
+      "label": "~Q2"
+    },
+    {
+      "id": "n4a",
+      "type": "NAND",
+      "x": 1420,
+      "y": 20,
+      "config": {},
+      "label": "M3a"
+    },
+    {
+      "id": "n4b",
+      "type": "NAND",
+      "x": 1420,
+      "y": 100,
+      "config": {},
+      "label": "M3b"
+    },
+    {
+      "id": "n4c",
+      "type": "NAND",
+      "x": 1540,
+      "y": 20,
+      "config": {},
+      "label": "S3a"
+    },
+    {
+      "id": "n4d",
+      "type": "NAND",
+      "x": 1540,
+      "y": 100,
+      "config": {},
+      "label": "S3b"
+    },
+    {
+      "id": "inv3",
+      "type": "NOT",
+      "x": 1660,
+      "y": 60,
+      "config": {},
+      "label": "~Q3"
+    },
+    {
+      "id": "out0",
+      "type": "OUTPUT",
+      "x": 580,
+      "y": 160,
+      "config": {},
+      "label": "Q0"
+    },
+    {
+      "id": "out1",
+      "type": "OUTPUT",
+      "x": 960,
+      "y": 160,
+      "config": {},
+      "label": "Q1"
+    },
+    {
+      "id": "out2",
+      "type": "OUTPUT",
+      "x": 1340,
+      "y": 160,
+      "config": {},
+      "label": "Q2"
+    },
+    {
+      "id": "out3",
+      "type": "OUTPUT",
+      "x": 1720,
+      "y": 160,
+      "config": {},
+      "label": "Q3"
+    },
+    {
+      "id": "seg1",
+      "type": "SEVEN_SEGMENT",
+      "x": 1900,
+      "y": 100,
+      "config": {},
+      "label": "Display"
+    }
+  ],
+  "wires": [
+    {"from": ["c1", "out"], "to": ["c2", "in"]},
+    {"from": ["c1", "out"], "to": ["n1a", "in0"]},
+    {"from": ["c1", "out"], "to": ["n1d", "in1"]},
+    {"from": ["c2", "out"], "to": ["n1b", "in1"]},
+    {"from": ["c2", "out"], "to": ["n1c", "in0"]},
+    {"from": ["n1a", "out"], "to": ["n1b", "in0"]},
+    {"from": ["n1b", "out"], "to": ["n1a", "in1"]},
+    {"from": ["n1b", "out"], "to": ["n1c", "in1"]},
+    {"from": ["n1c", "out"], "to": ["n1d", "in0"]},
+    {"from": ["n1d", "out"], "to": ["inv0", "in"]},
+    {"from": ["inv0", "out"], "to": ["n1a", "in1"]},
+    {"from": ["inv0", "out"], "to": ["out0", "in"]},
+    {"from": ["n1d", "out"], "to": ["n2a", "in0"]},
+    {"from": ["n1d", "out"], "to": ["n2d", "in1"]},
+    {"from": ["c1", "out"], "to": ["n2b", "in1"]},
+    {"from": ["c1", "out"], "to": ["n2c", "in0"]},
+    {"from": ["n2a", "out"], "to": ["n2b", "in0"]},
+    {"from": ["n2b", "out"], "to": ["n2a", "in1"]},
+    {"from": ["n2b", "out"], "to": ["n2c", "in1"]},
+    {"from": ["n2c", "out"], "to": ["n2d", "in0"]},
+    {"from": ["n2d", "out"], "to": ["inv1", "in"]},
+    {"from": ["inv1", "out"], "to": ["n2a", "in1"]},
+    {"from": ["inv1", "out"], "to": ["out1", "in"]},
+    {"from": ["n2d", "out"], "to": ["n3a", "in0"]},
+    {"from": ["n2d", "out"], "to": ["n3d", "in1"]},
+    {"from": ["c1", "out"], "to": ["n3b", "in1"]},
+    {"from": ["c1", "out"], "to": ["n3c", "in0"]},
+    {"from": ["n3a", "out"], "to": ["n3b", "in0"]},
+    {"from": ["n3b", "out"], "to": ["n3a", "in1"]},
+    {"from": ["n3b", "out"], "to": ["n3c", "in1"]},
+    {"from": ["n3c", "out"], "to": ["n3d", "in0"]},
+    {"from": ["n3d", "out"], "to": ["inv2", "in"]},
+    {"from": ["inv2", "out"], "to": ["n3a", "in1"]},
+    {"from": ["inv2", "out"], "to": ["out2", "in"]},
+    {"from": ["n3d", "out"], "to": ["n4a", "in0"]},
+    {"from": ["n3d", "out"], "to": ["n4d", "in1"]},
+    {"from": ["c1", "out"], "to": ["n4b", "in1"]},
+    {"from": ["c1", "out"], "to": ["n4c", "in0"]},
+    {"from": ["n4a", "out"], "to": ["n4b", "in0"]},
+    {"from": ["n4b", "out"], "to": ["n4a", "in1"]},
+    {"from": ["n4b", "out"], "to": ["n4c", "in1"]},
+    {"from": ["n4c", "out"], "to": ["n4d", "in0"]},
+    {"from": ["n4d", "out"], "to": ["inv3", "in"]},
+    {"from": ["inv3", "out"], "to": ["n4a", "in1"]},
+    {"from": ["inv3", "out"], "to": ["out3", "in"]},
+    {"from": ["out0", "in"], "to": ["seg1", "A"]},
+    {"from": ["out1", "in"], "to": ["seg1", "B"]},
+    {"from": ["out2", "in"], "to": ["seg1", "C"]},
+    {"from": ["out3", "in"], "to": ["seg1", "D"]}
+  ]
+}
