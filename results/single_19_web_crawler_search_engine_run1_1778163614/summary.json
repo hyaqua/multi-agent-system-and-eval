@@ -1,0 +1,26 @@
+{
+  "task_name": "web_crawler_search_engine",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 2,
+  "total_tokens_used": 2379130,
+  "duration_seconds": 1965.8,
+  "num_files": 10,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 839551,
+      "num_files": 8,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 23,
+      "tokens_so_far": 2379130,
+      "num_files": 10,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}
