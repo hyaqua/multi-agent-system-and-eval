@@ -1,0 +1,26 @@
+{
+  "task_name": "text_statistics",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 2,
+  "total_tokens_used": 814248,
+  "duration_seconds": 475.26,
+  "num_files": 6,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 30,
+      "tokens_so_far": 297401,
+      "num_files": 4,
+      "has_progress_report": false
+    },
+    {
+      "iteration": 1,
+      "tool_rounds": 23,
+      "tokens_so_far": 814248,
+      "num_files": 6,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

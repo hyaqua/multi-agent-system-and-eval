@@ -1,0 +1,9 @@
+The quick brown fox jumps over the lazy dog. The dog was not amused by the fox's antics. What a strange pair they make!
+
+Mr. Smith and Dr. Jones went to the park. They saw many birds flying high above the trees. It was a beautiful afternoon, wasn't it?
+
+The average readability score helps determine how difficult a text is to read. Some texts are very simple and easy to understand, while others require advanced reading skills to comprehend fully. This particular paragraph contains several sentences of varying lengths to better test the statistical analysis capabilities of our program.
+
+Supercalifragilisticexpialidocious is a very long word indeed. A tiny ant walked by silently. Go!
+
+i.e. that is to say, e.g. for example, and etc. are all abbreviations that should not break sentence detection.

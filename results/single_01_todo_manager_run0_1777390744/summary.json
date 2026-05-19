@@ -1,0 +1,19 @@
+{
+  "task_name": "todo_manager",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 1,
+  "total_tokens_used": 174986,
+  "duration_seconds": 260.35,
+  "num_files": 2,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 17,
+      "tokens_so_far": 174986,
+      "num_files": 2,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

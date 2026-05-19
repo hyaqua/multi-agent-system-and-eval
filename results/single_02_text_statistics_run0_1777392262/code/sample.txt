@@ -1,0 +1,11 @@
+Hello world! This is a sample text file for testing the text statistics analyzer. How are you today? I hope you're doing well.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps again and again! Wow, what an amazing fox?
+
+This is the third paragraph. It contains more sentences, and more words, to help test the readability score. Let's see if all features work correctly: character counts, word counts, line counts, sentence detection, averages, frequencies, and readability scores.
+
+Python is an amazing programming language. Python is used for data science, web development, automation, and much more. Python Python Python!
+
+Short sentence. Long sentence with many different words to make things interesting for analysis purposes here today folks.
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z. The alphabet is complete. Z z z z z z.

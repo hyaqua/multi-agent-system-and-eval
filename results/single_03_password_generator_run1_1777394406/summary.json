@@ -1,0 +1,19 @@
+{
+  "task_name": "password_generator",
+  "system": "single_agent",
+  "final_status": "complete",
+  "total_iterations": 1,
+  "total_tokens_used": 56106,
+  "duration_seconds": 182.34,
+  "num_files": 2,
+  "iteration_history": [
+    {
+      "iteration": 0,
+      "tool_rounds": 7,
+      "tokens_so_far": 56106,
+      "num_files": 2,
+      "has_progress_report": true,
+      "status": "complete"
+    }
+  ]
+}

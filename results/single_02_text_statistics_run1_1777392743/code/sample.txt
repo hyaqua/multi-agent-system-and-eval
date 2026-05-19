@@ -1,0 +1,9 @@
+The quick brown fox jumps over the lazy dog. This is a test sentence! Is this working? Yes, it is working perfectly.
+
+The fox and the dog became friends. They played together every day in the sunshine. What a wonderful world we live in! Nature is beautiful and full of surprises. Birds sing, flowers bloom, and the wind blows gently through the trees.
+
+This paragraph contains more words to analyze. We need enough text to make the statistics meaningful and interesting. The Flesch-Kincaid readability score will tell us how easy this text is to read. Short sentences help readability. Long, complex sentences with many clauses do not help readability at all.
+
+Python is a great programming language. It is used for data science, web development, automation, and many other tasks. The standard library is comprehensive and powerful. We can build useful tools without any external dependencies. This makes Python an excellent choice for beginners and experts alike.
+
+Testing testing testing. The the the the the. A a a a a a a a a. I i i i i i i i i i i i.
